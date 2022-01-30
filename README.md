@@ -1,21 +1,28 @@
-# Pi-Apps_terminal-C_edition
-Pi-Apps terminal written in C
+# Pi-Apps CLI
+Pi-Apps CLI client written in C 
 
-## Compiling
-**it's recommended to run the `install_checks.sh` script by running `bash install_checks.sh` after the `cd` line bellow to make sure the program will run correctly.**
+### About this project
+This is my first complete C program I've written! It's based off of [@Itai-Nelken](https://github.com/Itai-Nelken)'s Pi-Apps-Terminal-Bash-Edition, as it has the same functions.
+
+### Installing
+
+Make sure you have [Pi-Apps](https://github.com/Botspot/pi-apps) installed first, this program is useless without it.
+
 ```bash
-git clone https://github.com/Itai-Nelken/Pi-Apps_terminal-C_edition.git
-cd Pi-Apps_terminal-C_edition
+git clone https://github.com/ryanfortner/pi-apps-cli.git
+cd pi-apps-cli
 mkdir build; cd build; cmake ..
 ```
-to run from the build whithout installing, run from the `build` folder: `./papm`.
-## Installing
-first compile using the steps in the the compiling step, then run `sudo make install`.
-## Uninstalling
-open your terminal in the `Pi-Apps_terminal-C_edition/build` folder and run `sudo make uninstall`.
-you can also simply delete `/usr/local/bin/papm`.
-## running
-if you installed with `sudo make install`, then run with `papm`. otherwise you can run it directly from the build folder by typing `./papm` after compiling.
+These steps will generate a binary file called `pi-apps`. You can either run this binary directly, or install it with the following command:
+
+```
+sudo make install
+```
+
+### Uninstalling
+open your terminal in the `pi-apps-cli/build` folder and run `sudo make uninstall`.
+you can also simply delete `/usr/local/bin/pi-apps`.
+
 ## to do
 - [x] install
 - [x] uninstall
@@ -25,3 +32,4 @@ if you installed with `sudo make install`, then run with `papm`. otherwise you c
 - [ ] list-corrupted
 - [ ] search
 - [ ] website
+- [ ] debianization
