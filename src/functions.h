@@ -1,5 +1,5 @@
-#define APPNAME "pi-apps terminal C edition"
-#define APPVER "0.0.3"
+#define APPNAME "pi-apps-cli"
+#define APPVER "0.0.1"
 
 void echo(char text[256]);
 int help(void);
