@@ -13,7 +13,7 @@ target_link_libraries(pi-apps PRIVATE functions)
 
 install(
 	#CODE "execute_process(COMMAND ./install_checks.sh)"
-	TARGETS papm
+	TARGETS pi-apps
 	DESTINATION /usr/local/bin
 )
 
