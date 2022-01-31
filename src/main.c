@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "functions.h" //APPNAME & APPVER defined in functions.h
+#include "functions.h"
 
 
 int main(int argc, char **argv) {
