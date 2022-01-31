@@ -20,7 +20,7 @@ int help(void) {
 }
 
 int about(void) {
-	printf("Pi-Apps CLI v%s\n", APPVER)
+	printf("Pi-Apps CLI v%s\n", APPVER);
 }
 
 
