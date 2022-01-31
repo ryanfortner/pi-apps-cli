@@ -1,9 +1,6 @@
 # Pi-Apps CLI
 Pi-Apps CLI client written in C 
 
-### About this project
-This is my first complete C program I've written! It's based off of [@Itai-Nelken](https://github.com/Itai-Nelken)'s Pi-Apps-Terminal-Bash-Edition, as it has the same functions.
-
 ### Installing
 
 Make sure you have [Pi-Apps](https://github.com/Botspot/pi-apps) installed first, this program is useless without it.
