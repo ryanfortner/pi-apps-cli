@@ -9,6 +9,7 @@ Make sure you have [Pi-Apps](https://github.com/Botspot/pi-apps) installed first
 git clone https://github.com/ryanfortner/pi-apps-cli.git
 cd pi-apps-cli
 mkdir build; cd build; cmake ..
+make
 ```
 These steps will generate a binary file called `pi-apps`. You can either run this binary directly, or install it with the following command:
 
