@@ -27,8 +27,12 @@ int about(void) {
 }
 
 int listall(void) {
+        char *buf;
+        buf=(char *)malloc(10*sizeof(char));
+        buf=getlogin();
+        printf("\n %s \n", buf);
         struct dirent *entry = NULL;
-        DIR *d = opendir("$HOME/pi-apps/apps");
+        DIR *d = opendir("%s/pi-apps/apps", buf);
         if(d == NULL) {
                 fprintf(stderr, "ERROR: %s\n", strerror(errno));
                 return 1;
