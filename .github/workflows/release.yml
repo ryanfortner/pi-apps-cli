@@ -21,7 +21,7 @@ jobs:
           args: >
             bash -c
             "apt update &&
-            apt install make cmake build-essential -y &&
+            apt install make cmake build-essential git dpkg-dev -y &&
             cd /github/workspace &&
             git clone https://github.com/ryanfortner/pi-apps-cli &&
             cd ./pi-apps-cli &&
@@ -37,7 +37,7 @@ jobs:
           args: >
             bash -c
             "apt update &&
-            apt install make cmake build-essential -y &&
+            apt install make cmake build-essential git dpkg-dev -y &&
             cd /github/workspace &&
             git clone https://github.com/ryanfortner/pi-apps-cli &&
             cd ./pi-apps-cli &&
