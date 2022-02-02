@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(pi-apps-cli VERSION 0.0.1)
+project(pi-apps-cli VERSION 0.0.2)
 
 set(PIAPPSCLI_ROOT ${CMAKE_SOURCE_DIR})
 
