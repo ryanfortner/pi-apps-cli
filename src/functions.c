@@ -25,7 +25,7 @@ int about(void) {
 	printf("Pi-Apps CLI v%s\n", APPVER);
 }
 
-int list_files(int argc, char **argv) {
+int listfiles(int argc, char **argv) {
         if(argc < 2) {
                 fprintf(stderr, "\x1b[1mUSAGE:\x1b[0m %s [path]\n", argv[0]);
                 return 1;
