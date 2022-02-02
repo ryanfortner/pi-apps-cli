@@ -34,7 +34,7 @@ int main(int argc, char **argv) {
 			system("echo 'u' | $HOME/pi-apps/updater");
 			break;
 		} else if(strcmp(argv[1], "list-all")==0) {
-			listfiles("$HOME/pi-apps/apps");
+			listall();
 			break;
 		} else if(strcmp(argv[1], "gui")==0) {
 			system("$HOME/pi-apps/gui");
