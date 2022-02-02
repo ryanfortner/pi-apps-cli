@@ -7,4 +7,4 @@
 void echo(char text[256]);
 int help(void);
 int about(void);
-int list_files(int argc, char **argv);
+int listfiles(int argc, char **argv);
