@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <dirent.h>
+#include <errno.h>
 #include <string.h>
 #include "functions.h"
 
@@ -23,6 +25,25 @@ int about(void) {
 	printf("Pi-Apps CLI v%s\n", APPVER);
 }
 
+int list_files(int argc, char **argv) {
+        if(argc < 2) {
+                fprintf(stderr, "\x1b[1mUSAGE:\x1b[0m %s [path]\n", argv[0]);
+                return 1;
+        }
+        struct dirent *entry = NULL;
+        DIR *d = opendir(argv[1]);
+        if(d == NULL) {
+                fprintf(stderr, "%s: error: failed to open directory %s (%s)\n", argv[0], argv[1], strerror(errno));
+                return 1;
+        }
+
+        while((entry = readdir(d)) != NULL) {
+                printf("%s\n", entry->d_name);
+        }
+
+        closedir(d);
+        return 0;
+}
 
 /*
 int list_all(void) {
