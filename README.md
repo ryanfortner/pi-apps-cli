@@ -1,5 +1,5 @@
 # Pi-Apps CLI
-Pi-Apps CLI client written in C 
+Pi-Apps command-line client written in C 
 
 ### Installing
 
