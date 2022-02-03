@@ -10,7 +10,7 @@ void echo(char text[256]) {
 }
 
 int help(void) {
-	printf("%s, v%s\n", APPNAME, APPVER);
+	printf("%s, v%s\n", NAME, VER);
 	printf("\e[7m\e[1m\e[94mUSAGE:\e[0m\n-------\n\e[4m\e[92mpi-apps [option]\e[0m\n\n");
 	printf("\e[7m\e[1m\e[94mAvailable options:\e[0m\n-------------------\n");
 	printf("\n\e[100minstall \"[appname]\"\e[0m - install any app available on pi-apps.\n");
@@ -23,7 +23,7 @@ int help(void) {
 }
 
 int about(void) {
-	printf("Pi-Apps CLI v%s\n", APPVER);
+	printf("Pi-Apps CLI %s, v%s\n", ARCH, VER);
 }
 
 int listall(void) {
