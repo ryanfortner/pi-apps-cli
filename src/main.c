@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <dirent.h>
+#include <errno.h>
 #include <string.h>
 #include "functions.h"
-
 
 int main(int argc, char **argv) {
 	char app[50], command[50];
@@ -31,6 +32,9 @@ int main(int argc, char **argv) {
 			break;
 		} else if(strcmp(argv[1], "update")==0) {
 			system("echo 'u' | $HOME/pi-apps/updater");
+			break;
+		} else if(strcmp(argv[1], "list-all")==0) {
+			listall();
 			break;
 		} else if(strcmp(argv[1], "gui")==0) {
 			system("$HOME/pi-apps/gui");

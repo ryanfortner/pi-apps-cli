@@ -24,7 +24,7 @@ you can also simply delete `/usr/local/bin/pi-apps`.
 ## to do
 - [x] install
 - [x] uninstall
-- [ ] list-all
+- [x] list-all
 - [ ] list-installed
 - [ ] list-uninstalled
 - [ ] list-corrupted
