@@ -1,6 +1,8 @@
 # Pi-Apps CLI
 Pi-Apps command-line client written in C 
 
+![screenshot](https://github.com/ryanfortner/pi-apps-cli/blob/master/screenshot.png?raw=true)
+
 ### Installing
 
 Make sure you have [Pi-Apps](https://github.com/Botspot/pi-apps) installed first, this program is useless without it.
