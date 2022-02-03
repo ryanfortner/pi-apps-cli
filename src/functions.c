@@ -29,7 +29,7 @@ int about(void) {
 int listall(void) {
         char dir[128] = {0};
         char *home = getenv("HOME");
-	if(d == NULL) {
+	if(home == NULL) {
                 fprintf(stderr, "error: %s\n", strerror(errno));
                 return 1;
         }
