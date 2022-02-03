@@ -3,7 +3,7 @@
 #include <dirent.h>
 #include <errno.h>
 #include <string.h>
-#include "functions.h"
+#include "include/functions.h"
 
 int main(int argc, char **argv) {
 	char app[50], command[50];

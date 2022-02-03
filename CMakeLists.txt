@@ -6,7 +6,7 @@ set(PIAPPSCLI_ROOT ${CMAKE_SOURCE_DIR})
 
 add_library(
 	functions
-	src/functions.h
+	src/include/functions.h
 	src/functions.c
 )
 
@@ -14,7 +14,6 @@ add_executable(pi-apps src/main.c)
 target_link_libraries(pi-apps PRIVATE functions)
 
 install(
-	#CODE "execute_process(COMMAND ./install_checks.sh)"
 	TARGETS pi-apps
 	DESTINATION /usr/local/bin
 )

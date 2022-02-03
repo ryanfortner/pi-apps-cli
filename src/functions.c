@@ -3,7 +3,7 @@
 #include <dirent.h>
 #include <errno.h>
 #include <string.h>
-#include "functions.h"
+#include "include/functions.h"
 
 void echo(char text[256]) {
 	printf("%s\n", text);
@@ -45,11 +45,3 @@ int listall(void) {
         return 0;
 
 }
-
-/*
-int list_all(void) {
-    char command[40];
-    strcpy(command, "cd $");
-}
-*.
-*/
