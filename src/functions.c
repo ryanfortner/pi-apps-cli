@@ -27,14 +27,13 @@ int about(void) {
 }
 
 int listall(void) {
-        char *buf;
-        buf=(char *)malloc(10*sizeof(char));
-        buf=getlogin();
-        printf("\n %s \n", buf);
+        char *home = getenv("HOME");
+        char *piappsdir = "/pi-apps/apps/";
+	strcat(home,piappsdir);
         struct dirent *entry = NULL;
-        DIR *d = opendir("%s/pi-apps/apps", buf);
+        DIR *d = opendir(home);
         if(d == NULL) {
-                fprintf(stderr, "ERROR: %s\n", strerror(errno));
+                fprintf(stderr, "error: %s\n", strerror(errno));
                 return 1;
         }
 
@@ -44,6 +43,7 @@ int listall(void) {
 
         closedir(d);
         return 0;
+
 }
 
 /*
