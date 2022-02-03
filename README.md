@@ -30,5 +30,5 @@ you can also simply delete `/usr/local/bin/pi-apps`.
 - [ ] list-corrupted
 - [ ] search
 - [ ] website
-- [ ] release workflow
-- [ ] debianization
+- [x] release workflow
+- [x] debian packaging
