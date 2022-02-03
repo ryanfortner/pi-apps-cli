@@ -27,15 +27,12 @@ int about(void) {
 }
 
 int listall(void) {
+        char dir[128] = {0};
         char *home = getenv("HOME");
-        char *piappsdir = "/pi-apps/apps/";
-	strcat(home,piappsdir);
+        strcat(dir, home);
+        strcat(dir, "/pi-apps/apps");
         struct dirent *entry = NULL;
-        DIR *d = opendir(home);
-        if(d == NULL) {
-                fprintf(stderr, "error: %s\n", strerror(errno));
-                return 1;
-        }
+        DIR *d = opendir(dir);
 
         while((entry = readdir(d)) != NULL) {
                 printf("%s\n", entry->d_name);
