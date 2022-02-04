@@ -23,7 +23,7 @@ int help(void) {
 }
 
 int about(void) {
-	printf("Pi-Apps CLI %s, v%s\n", ARCH, VER);
+	printf("Pi-Apps CLI v%s\n", VER);
 }
 
 int listall(void) {

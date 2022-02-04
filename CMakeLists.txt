@@ -4,23 +4,8 @@ project("pi-apps-cli" VERSION 0.0.4 LANGUAGES C)
 
 set(BIN "pi-apps")
 
-execute_process(
-    COMMAND bash "-c" "echo $(od -An -t x1 -j 4 -N 1 \"$(readlink -f /sbin/init)\") | tr -d '\n'" 
-    OUTPUT_VARIABLE ARCH
-)
-if(${ARCH} STREQUAL 02)
-        message(STATUS "Building on arch: arm64")
-        set(ARCH_NUM 64)
-        set(ARCH "aarch64")
-elseif(${ARCH} STREQUAL 01)
-        message(STATUS "Building on arch: armhf")
-        set(ARCH_NUM 32)
-        set(ARCH "armv7l")
-endif()
-
 add_compile_definitions(VER="${CMAKE_PROJECT_VERSION}")
 add_compile_definitions(NAME="${CMAKE_PROJECT_NAME}")
-add_compile_definitions(ARCH="${ARCH_NUM}")
 
 add_library(functions STATIC
             src/functions.c
