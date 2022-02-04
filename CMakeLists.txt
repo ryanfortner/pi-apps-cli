@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project("pi-apps-cli" VERSION 0.0.3 LANGUAGES C)
+project("pi-apps-cli" VERSION 0.0.4 LANGUAGES C)
 
 set(BIN "pi-apps")
 
